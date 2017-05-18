@@ -1,0 +1,47 @@
+.layer .image-container {
+	position: fixed;
+	padding: 5%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: #000;
+	text-align: center;
+}
+.layer .image-container img {
+	max-height: 100%;
+	max-width: 100%;
+	vertical-align: middle;
+}
+.layer .header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 40px;
+	line-height: 40px;
+	color: #fff;
+}
+.layer .header .go-back {
+	float: left;
+	position: relative;
+}
+.layer .header .go-back .arrow {
+	position: absolute;
+	top: 15px;
+	left: -5px;
+	border: 16px solid transparent;
+	border-right: 16px solid #fff;
+}
+.layer .header .go-back .arrow.black {
+	left: -2px;
+	border-right-color: #000;
+}
+.layer .header h1 {
+	text-align: center;
+	width:95%;
+	text-indent: 33px;
+	line-height: 30px;
+	padding-top: 5px;
+	font-size: 17px;
+}

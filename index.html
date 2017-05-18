@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<style type="text/css">
+</style>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, width=device-width">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="js/list/list.css">
+	<link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+	<title>堆糖-美好生活研究所</title>
+</head>
+<body>
+	<div id="app">
+	  <div id="wrap">
+		<header id="header">
+			<div class="left">
+				<img src="img/head/logo.png" alt="">
+			</div>
+				<a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.duitang.main#mdthome" title="下载啦" class="middle">App打开</a>
+				<a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.duitang.main#mdthome" title="下载啦" class="right">下载</a>
+		</header>
+		<div class="swiper-container">
+		    <div class="swiper-wrapper">
+		        <div class="swiper-slide">
+		        <img src="img/lunbo/01.jpg" alt="">
+		        <div id="d1">
+						<p>2017年04月08日</p>
+						<p>这些女孩的搭配页太好学了吧！</p>
+					</div>
+		        </div>
+		        <div class="swiper-slide">
+		        <img src="img/lunbo/02.jpg" alt="">
+		        <div id="d2">
+					<p>2017年04月07日</p>
+					<p>出街必备鸭舌帽</p>
+					</div>
+		        </div>
+		        <div class="swiper-slide">
+		        <img src="img/lunbo/03.jpg" alt="">
+	        	<div id="d3">
+					<p>2017年04月06日</p>
+					<p>属于你的粉红回忆</p>
+				</div>
+		        </div>
+		        <div class="swiper-slide">
+		        <img src="img/lunbo/04.jpg" alt="">
+		        <div id="d4">
+					<p>2017年04月05日</p>
+					<p>穿上裙子转圈圈</p>
+					</div>
+		        </div>
+		        <div class="swiper-slide">
+		        <img src="img/lunbo/05.jpg" alt="">
+		        <div id="d5">
+					<p>2017年04月04日</p>
+					<p>露出耳环的时候到了</p>
+					</div>
+		        </div>
+		    </div>
+	    <!-- 如果需要分页器 -->
+	    <div class="swiper-pagination"></div>
+	    
+	    <!-- 如果需要导航按钮 -->
+	    <div class="swiper-button-prev"></div>
+	    <div class="swiper-button-next"></div>
+	    
+	    <!-- 如果需要滚动条 -->
+	    <div class="swiper-scrollbar"></div>
+</div>
+	  <section class="intro">
+	  	 <ul class="top">
+	  	 	<li><a href="https://m.duitang.com/category/" title=""><span></span><span>良品购</span></li></a>
+	  	 	<li><a href="https://m.duitang.com/category/" title=""><span></span><span>商店</span></a></li>
+	  	 	<li><a href="https://m.duitang.com/category/" title=""><span></span><span>美食菜谱</span></a></li>
+	  	 	<li><a href="https://m.duitang.com/category/" title=""><span></span><span>家居生活</span></a></li>
+	  	 </ul>
+	  	 <ul class="bottom">
+	  	 	<li><a href="https://m.duitang.com/category/" title=""><span></span><span>壁纸</span></a></li>
+	  	 	<li><a href="https://m.duitang.com/category/" title=""><span></span><span>头像</span></a></li>
+	  	 	<li><a href="https://m.duitang.com/category/" title=""><span></span><span>表情</span></a></li>
+	  	 	<li><a href="https://m.duitang.com/category/" title=""><span></span><span>更多分类</span></a></li>
+	  	 </ul>
+	  </section>
+	  <section id="pbl" class="pbl">
+	  	 <div class="image-container">
+			<div class="image-left-container"></div>
+			<div class="image-right-container"></div>
+		</div>
+	  </section>
+	 <div class="go-top">返回顶部</div>
+	</div>
+	<section id="layer" class="layer"></section>
+  </div>
+</body>
+   <script type="text/template" id="tpl1">
+   	 <!-- <div class="image-container">
+			<div class="image-left-container"> -->
+			   <div class="img_wc">
+					<a href="<%=href%>"><img src="<%=src%>" alt="" style="<%=style%>" /></a>
+					<p>
+					   <span><%=title%></span>
+					   <span><%=shoucang%></span>
+					</p>
+					<div>
+						<span style="background:url(<%=user_header%>) no-repeat -2px -2px;"></span>
+						<p>
+							<span><%=user_name%></span>
+							<span><%=special%></span>
+						</p>
+					</div>
+			 </div>
+   </script>
+   <script type="text/template" id="tpl2">
+	   	<div class="image-container" style="<%=style%>"><img src="<%=src%>" alt=""></div>
+		<header class="header">
+			<div class="go-back"><span class="arrow"></span><span class="arrow black"></span></div>
+			<h1><%=title%></h1>
+		</header>
+   </script>
+<script type="text/javascript" src="js/lib/swiper.min.js"></script>
+<script type="text/javascript">
+	var mySwiper = new Swiper ('.swiper-container', {
+    // direction: 'vertical',
+    loop: true,
+    // 如果需要分页器
+    pagination: '.swiper-pagination',
+    
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+    autoplay: 2500,
+    autoplayDisableOnInteraction: false,
+    scrollbar: '.swiper-scrollbar',
+  })  
+</script>
+<script type="text/javascript" src="js/lib/require.js" data-main="js/app.js"></script>
+</html>

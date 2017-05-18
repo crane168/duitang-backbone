@@ -1,0 +1,255 @@
+#app{
+	width:100%;
+	/*display: block*/
+}
+/*header部分*/
+#header{
+	display:-webkit-box;
+	padding:10px;
+	display: flex;
+}
+#header .left{
+	-webkit-box-flex:2;
+	vertical-align: middle;
+}
+#header .middle{
+	-webkit-box-flex:1;
+	text-align: center;
+	vertical-align: middle;
+}
+#header .right{
+	-webkit-box-flex:1;
+	text-align: center;
+	vertical-align: middle;
+}
+#header .left img{
+	display: block;
+	max-width:100%;
+	width:95%;
+}
+#header  .middle{
+	display: block;
+	-webkit-box-flex:1;
+	width:90%;
+	height:30px;
+	/*padding-top:7px;*/
+	color:#F25555;
+	text-decoration: none;
+	border-radius: 3px;
+	text-align: center;
+	border:1px solid red;
+	line-height: 25px;
+	vertical-align: middle;
+	border-radius:3px;
+	margin-right: 10px;
+	line-height: 25px;
+}
+#header .right{
+	display: block;
+	-webkit-box-flex:1;
+	width:90%;
+	height:25px;
+	line-height: 25px;
+	padding-top:7px;
+	color:white;
+	font-size: 15px;
+	background:#F25555;
+	border-radius:3px;
+	text-align: center;
+	text-decoration: none;
+	vertical-align: middle;
+}
+/*轮播图部分*/
+	.swiper-container {
+		    width: 100%;
+		    height: auto;
+		    /*text-align: center;*/
+		    vertical-align: middle;
+			overflow: hidden;
+			position: relative;
+		} 
+		.swiper-slide {
+			height:500%;
+			position: relative;
+		}
+		.swiper-slide div{
+	    	position: absolute;
+	    	left:5%;
+	    	bottom:5%;
+	    	color:rgb(255,255,255);
+	    }
+	    .swiper-slide div p:first-child{
+		       font-size: 15px;
+		       /*line-height: 10px;*/
+		    }
+		.swiper-slide div p:last-child{
+	    	font-size: 20px;
+	    }
+		.swiper-slide img{
+			display: block;
+			width:100%;
+			/*height:100%;*/
+		}
+    /*堆糖分类介绍*/
+    section.intro ul{
+    	/*display:-webkit-box;*/
+    	overflow: hidden;
+    }
+    section.intro ul li{
+    	/*-webkit-box-flex:1;*/
+    	float: left;
+    	width:25%;
+    	box-sizing: border-box;
+    	height:95px;
+    	border-right: 1px solid #ccc;
+    	border-bottom: 1px solid #ccc;
+    	/*position: relative;*/
+    	text-align: center;
+    }
+    section.intro ul li a{
+    	/*display: block;*/
+    	/*width:100%;*/
+    	/*height: auto;*/
+    	/*text-align: center;*/
+    	/*margin:20% auto;*/
+    	text-decoration: none;
+    }
+    section.intro ul li a span:first-child{
+    	width:36px;
+    	height:36px;
+    	display: block;
+    	/*position: absolute;*/
+    	/*text-align: center;*/
+    	/*left:33%;
+    	right:0;
+    	top:16%;*/
+    	margin:10px auto;
+    	background: url('../../img/head/duitang.png') no-repeat 0 0;
+    	background-size: 288px auto;
+    }
+    section.intro ul li span:last-child{
+    	display: block;
+    	/*position: absolute;*/
+    	/*text-align: center;*/
+    	/*height:16px;*/
+    	font-size: 12px;
+    	/*left:0;
+    	right:0;*/
+    	/*bottom:30%;*/
+    }
+    #app section.intro ul.top li:nth-child(2) span:first-child{
+    	background: url('../../img/head/duitang.png') no-repeat -36px 0;
+    	background-size: 288px auto;
+    }
+    #app section.intro ul.top li:nth-child(3) span:first-child{
+    	background: url('../../img/head/duitang.png') no-repeat -69px 0;
+    	background-size: 288px auto;
+    }
+    #app section.intro ul.top li:nth-child(4) span:first-child{
+    	background: url('../../img/head/duitang.png') no-repeat -108px 0;
+    	background-size: 288px auto;
+    }
+    #app section.intro ul.bottom li:nth-child(1) span:first-child{
+    	background: url('../../img/head/duitang.png') no-repeat -144px 0;
+    	background-size: 288px auto;
+    }
+    #app section.intro ul.bottom li:nth-child(2) span:first-child{
+    	background: url('../../img/head/duitang.png') no-repeat -180px 0;
+    	background-size: 288px auto;
+    } 
+    #app section.intro ul.bottom li:nth-child(3) span:first-child{
+    	background: url('../../img/head/duitang.png') no-repeat -216px 0;
+    	background-size: 288px auto;
+    }
+    #app section.intro ul.bottom li:nth-child(4) span:first-child{
+    	background: url('../../img/head/duitang.png') no-repeat -252px 0;
+    	background-size: 288px auto;
+    }
+    /*手机瀑布流详情页*/
+     .image-container {
+	display: -webkit-box;
+	background: #F5F5F5;
+	font-size: 12px;
+	}
+	.image-container>div{
+		-webkit-box-flex: 1;
+	}
+	.image-container>div>div{
+		width:100%;
+		border:1px solid #ccc;
+		margin-bottom: 10px;
+		box-shadow: 0,0,2px,#ccc;
+	}
+	.image-container>div>div span{
+		display: inline-block;
+	}
+	.image-container>div>div>p{
+		width: 95%;
+		border-bottom: 1px solid rgba(204, 204, 204,0.4);
+		padding: 5px;
+	}
+	.image-container>div>div>p span{
+		line-height: 17px;
+		width: 95%;
+	}
+	.image-container>div>div>p span:last-child{
+		color:grey;
+		font-size: 13px;
+	}
+	.image-container>div>div>div{
+		margin-bottom: 10px;
+		overflow: hidden;
+	}
+	.image-container>div>div>div>span{
+		display: inline-block;
+		width:30px;
+		height:30px;
+		/*background: url(../../img/header/_1.jpg) no-repeat -2px -2px;*/
+		background-size: 35px auto!important;
+		border-radius: 50%;
+		border:1px solid #ccc;
+		margin:6px;
+	}
+	.image-container>div>div>div>p{
+		display: inline-block;
+		width:75%;
+		float:right;
+	}
+	.image-container>div>div>div>p span:first-child{
+		color:blue;
+		width:90%;
+		padding-top: 10px;
+		line-height: 17px;
+	}
+	.image-container>div>div>div>p span:last-child{
+		line-height: 17px;
+		width:90%;
+	}
+	 .image-left-container  {
+		padding: 10px 5px 10px 10px;
+	}
+	 .image-right-container {
+		padding: 10px 10px 10px 5px;
+	}
+	.image-container>div>div>a{
+		display: block;
+		width:100%;
+	}
+	 .image-container>div>div img {
+		width: 100%;
+		display: block;
+		margin-bottom: 6px;
+	}
+	/*返回顶部*/
+	.go-top {
+	width: 30px;
+	padding: 9px 6px;
+	font-size: 12px;
+	text-align: center;
+	background: rgba(0, 0, 0, .5);
+	color: #fff;
+	position: fixed;
+	right: 41px;
+	bottom: 210px;
+	display: none;
+} 
